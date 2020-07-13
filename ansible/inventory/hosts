@@ -1,0 +1,9 @@
+#localhost ansible_connection=local ansible_user=ansible
+
+[xrv]
+cisco-1
+cisco-2
+
+[xrv:vars]
+#ansible_connection=local
+###ansible_user=ansible

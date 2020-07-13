@@ -1,0 +1,12 @@
+---
+- name: Prueba
+  hosts: localhost
+  tasks:
+    - name: router_container
+      docker_container:
+        name: cisco1
+        image: vrnetlab/vr-xrv:6.1.2
+        state: started
+        tty: true
+        detach: true
+        
